@@ -2,6 +2,7 @@ package com.datanthuastic.kotlinlearning
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -117,6 +118,29 @@ class MainActivity : AppCompatActivity() {
         println(karisik[0])
         println(karisik[1])
 
+
+        // List - ArrayList
+
+        val myMusicians = arrayListOf<String>()
+        myMusicians.add("Asrın")
+        myMusicians.add("Gökberk")
+        myMusicians.add("Ömer")
+        myMusicians.add("Arda")
+        myMusicians.add(0, "Emre")
+
+        println(myMusicians)
+
+        val myArrayList = ArrayList<Int>()
+        myArrayList.add(1)
+        myArrayList.add(99)
+
+        val mixedArrayList = ArrayList<Any>()
+        mixedArrayList.add("SX")
+        mixedArrayList.add("Vintage Jazz Bass")
+        mixedArrayList.add(1.654)
+        mixedArrayList.add(true)
+
+        println(mixedArrayList)
 
 
 
